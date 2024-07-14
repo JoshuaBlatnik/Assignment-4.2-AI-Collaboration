@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the document type and language -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to make the website responsive -->
+    <title>My Portfolio</title> <!-- Sets the title of the document -->
+    <link rel="stylesheet" href="main.css"> <!-- Links the external CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Navigation links to different sections of the page -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home"> <!-- Section for the home content -->
+            <h1>Welcome to My Portfolio</h1> <!-- Main heading -->
+            <p>Explore my projects and get to know more about me.</p> <!-- Introduction paragraph -->
+        </section>
+        <section id="about"> <!-- Section for the about me content -->
+            <h2>About Me</h2> <!-- Subheading -->
+            <p>Hello! I'm Josh, a 19-year-old from Eveleth, MN. I love programming, lifting, and studying Computer Science.</p> <!-- Brief description about me -->
+            <!-- Interests section with a heading and list -->
+            <h3 id="hover-interests">Interests</h3>
+            <ul class="interests">
+                <li>Programming</li>
+                <li>Lifting</li>
+                <li>Game Development</li>
+                <li>Vehicle Repair</li>
+                <li>Partying</li>
+            </ul>
+            <!-- Hobbies section with a heading and list -->
+            <h3 id="hover-hobbies">Hobbies</h3>
+            <ul class="hobbies">
+                <li>Mountain Biking</li>
+                <li>Programming</li>
+                <li>Concerts</li>
+                <li>Electrical</li>
+                <li>Mechanical</li>
+                <li>Photo Design</li>
+            </ul>
+            <!-- Skills section with a heading and list -->
+            <h3 id="hover-skills">Skills</h3>
+            <ul class="skills">
+                <li>LUA, SQL, HTML, CSS, JS, C#, JSON, C++, Python, Java</li>
+                <li>Forklift Certified</li>
+                <li>CETP Certified</li>
+                <li>Class B Unrestricted CDL</li>
+                <li>MSHA Certified</li>
+                <li>Hazardous Material Endorsement</li>
+                <li>Propane & Diesel Fuel Delivery</li>
+            </ul>
+            <!-- Education section -->
+            <h3>Education</h3>
+            <p>Currently pursuing a bachelor's degree in Advancing Computer Science at UAT.</p>
+            <!-- Experience section -->
+            <h3>Experience</h3>
+            <p>I currently work at Edwards Oil as a Salesman, Mechanic, HVAC Technician, and Delivery Driver. I do Software Engineering on the side to prepare me for my career choice as a full stack Software Engineer for a large corporation.</p>
+        </section>
+        <section id="projects"> <!-- Section for the projects content -->
+            <h2>Projects</h2>
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Garcia Underground FiveM Server</h3>
+                <p>Garcia Underground is a serious roleplay server set in Knox County, Tennessee. It offers a highly immersive experience with custom scripts, realistic police cars, and high-quality interiors. Our server prioritizes authenticity and community engagement, providing players with a detailed and dynamic environment.</p>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Universal Inventory Software</h3>
+                <p>Universal Inventory Software is designed to streamline business operations with efficient and intuitive inventory management. It offers robust features like real-time tracking, detailed reporting, and easy integration with existing systems. Our software ensures accuracy, reduces manual effort, and enhances productivity. Ideal for businesses of all sizes, Universal Inventory Software simplifies inventory management, helping you stay organized and focused on growth.</p>
+            </div>
+        </section>
+        <section id="contact"> <!-- Section for the contact content -->
+            <h2>Contact</h2>
+            <!-- Contact form -->
+            <form action="#" method="post">
+                <label for="name">Name:</label> <!-- Label for name input -->
+                <input type="text" id="name" name="name" required> <!-- Input for name -->
+                <label for="email">Email:</label> <!-- Label for email input -->
+                <input type="email" id="email" name="email" required> <!-- Input for email -->
+                <label for="message">Message:</label> <!-- Label for message textarea -->
+                <textarea id="message" name="message" required></textarea> <!-- Textarea for message -->
+                <button type="submit">Send</button> <!-- Submit button -->
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Links the external JavaScript file -->
+</body>
+</html>

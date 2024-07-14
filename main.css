@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Set the font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #0e0e0e; /* Set background color */
+    color: #eaeaea; /* Set text color */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    font-size: 1.3rem; /* Set base font size */
+    user-select: none; /* Prevent text selection */
+}
+
+header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 250px; /* Set width */
+    height: 100vh; /* Set height to full viewport height */
+    background: #1c1c1c; /* Set background color */
+    color: #eaeaea; /* Set text color */
+    padding: 1rem; /* Add padding */
+    text-align: left; /* Align text to the left */
+}
+
+header nav ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+header nav ul li {
+    margin: 30px 0; /* Add vertical margin between list items */
+}
+
+header nav ul li a {
+    color: #eaeaea; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make links block-level elements */
+    padding: 5px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effects */
+}
+
+header nav ul li a:hover {
+    background-color: #008080; /* Set background color on hover */
+    color: #fff; /* Set text color on hover */
+}
+
+main {
+    margin-left: 270px; /* Add left margin to avoid overlap with fixed header */
+    padding: 5rem; /* Add padding */
+}
+
+section {
+    padding: 5vh 12vw 5vh 2vw; /* Add padding */
+    margin: 5vh 0; /* Add vertical margin */
+    background: #1c1c1c; /* Set background color */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    opacity: 0; /* Set initial opacity to 0 */
+    transform: translateY(50px); /* Set initial transform */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Add transition effects */
+}
+
+section.visible {
+    opacity: 1; /* Set opacity to 1 when visible */
+    transform: translateY(0); /* Reset transform when visible */
+}
+
+section#home {
+    padding: 2vh 2vw; /* Add padding */
+    margin: 2vh 0; /* Add vertical margin */
+}
+
+h1, h2 {
+    font-size: 1.7rem; /* Set font size */
+    text-align: left; /* Align text to the left */
+    color: #FFA500; /* Set text color */
+}
+
+.project {
+    margin: 1vh 0; /* Add vertical margin */
+}
+
+form {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items in a column */
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem; /* Add margin */
+}
+
+form input, form textarea, form button {
+    padding: 0.75rem; /* Add padding */
+    margin-bottom: 1rem; /* Add bottom margin */
+    border: 1px solid #444; /* Set border */
+    border-radius: 5px; /* Add rounded corners */
+    background: #333; /* Set background color */
+    color: #eaeaea; /* Set text color */
+}
+
+form button {
+    background: #008080; /* Set background color */
+    color: #eaeaea; /* Set text color */
+    cursor: pointer; /* Change cursor on hover */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+form button:hover {
+    background: #005f5f; /* Set background color on hover */
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+h3 {
+    display: inline-block; /* Display as inline-block */
+    font-size: 1.5rem; /* Set font size */
+    color: #008080; /* Set text color */
+}
+
+ul.interests, ul.hobbies, ul.skills {
+    list-style: disc; /* Set list style to disc */
+    padding-left: 1.5rem; /* Add padding */
+    opacity: 0; /* Set initial opacity to 0 */
+    max-height: 0; /* Set initial max height to 0 */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Add transition effects */
+}
+
+ul.interests.visible, ul.hobbies.visible, ul.skills.visible {
+    opacity: 1; /* Set opacity to 1 when visible */
+    max-height: 500px; /* Set max height when visible (adjust as needed) */
+}
+
+ul.interests li, ul.hobbies li, ul.skills li {
+    opacity: 0; /* Set initial opacity to 0 */
+    transform: translateX(-20px); /* Set initial transform */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Add transition effects */
+}
+
+ul.interests li.visible, ul.hobbies li.visible, ul.skills li.visible {
+    opacity: 1; /* Set opacity to 1 when visible */
+    transform: translateX(0); /* Reset transform when visible */
+}
+
+#hover-interests, #hover-hobbies, #hover-skills {
+    cursor: pointer; /* Change cursor to pointer */
+    display: inline-block; /* Display as inline-block */
+    color: #008080; /* Set text color */
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Set scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c; /* Set scrollbar track background color */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Set scrollbar thumb color */
+    border-radius: 10px; /* Add rounded corners */
+    border: 3px solid #1c1c1c; /* Set border color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #008080; /* Set scrollbar thumb color on hover */
+}
